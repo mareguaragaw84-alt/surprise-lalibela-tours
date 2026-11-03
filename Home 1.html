@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Hom page</title> 
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+            function search(query){
+                if(query.slice(0, 7) == "http://"){
+                    window.location.href = query
+                }
+                else{
+                    window.location.href = "https://www.google.com/search?q=" + query
+                }
+            }
+        </script>
+<style>
+body{
+    background-image: url(Lalibela-Tour.png);
+    
+	background-size:cover;
+  padding:0px 10px 10px 3px;
+}
+header{
+ width:100%;
+ background-color:#000066;
+ display:flex;
+ justify-content:space-between;
+align-items:center;
+ color:#FFFFFF;
+ font-size:20px;
+ column-gap: 10px;
+ 
+}
+ ol{
+ list-style:none;
+ display:flex;
+ column-gap: 10px;
+ margin-left: 20px;
+ 
+}
+ol li a{
+  color:#FFFFFF;
+  text-decoration:none;
+ }
+ ol li{
+ position:relative;
+ padding:15px;
+
+ }
+ ol ol{
+ position:absolute;
+ top:90%;
+ background-color:#007bff;
+ display:none;
+ width:250px;
+ padding:10px 18px 15px 10px;
+ text-align: left;
+}	  
+ol li:hover> ol{
+   display:block;
+   background-color:#000066;
+  }
+  header a:hover {
+  background-color:#FF9900;
+ }
+ ol ol ol{
+   position:absolute;
+   top:0%;
+   left: 150px;
+   text-align: left;
+     
+}
+
+h1{
+
+color:#0000FF;
+text-align:center;
+padding:0px;
+top:0%
+}
+p{
+text-align:justify;
+margin-left: 90px;
+margin-right: 90px;
+color:black;
+background-color: #fff;
+font-size:18px
+}
+  footer {
+        background-color: #344036; 
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		height:250px;
+    }
+.social-button {
+        margin: 10px 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s; 
+    }
+    .address iframe {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+    
+
+    .social-button:hover {
+        color: #007BFF;      
+	
+}
+.scrollbars-visible {
+    width: 100%;
+    height: 550px;
+    overflow: scroll; 
+}
+
+.search-bar {
+            display:flex;
+            align-items: center;
+            background: #fff;
+            padding: 5px;
+            border-radius: 30px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 100px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: #ff9900;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .search-bar button:hover {
+            background:#0033FF;
+        }
+		.search-bar button img{
+		background:#FFFFFF;
+            border: none;
+            padding: 3px 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+			width:25px;
+			height:22px;
+			}
+		.search-bar button:hover a{
+            background:#0000FF;
+        }
+		h3{
+		background-color:#FFFFFF;
+		color:black;
+		background-position:cover;
+		}
+.element-outline-border {
+    border: 2px solid blue;
+    outline: 2px dashed green;
+}
+    .scrollbars-visibles {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; 
+    }
+    .container {
+  position:static;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+
+
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 15px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.courses {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .course-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .course-card h3 {
+            margin: 1rem 0;
+        }
+
+        .course-card p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .enroll-btn {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .enroll-btn:hover {
+            background: #2980b9;
+        }
+        h2{
+          color: #FFFFFF;
+        }
+
+.menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align: right;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+
+    }
+    
+}
+dropdown-menus {
+        position: relative;
+        display:block;
+        
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+ <div class="scrollbars-visible">
+  <img src="photo 1/geyorgis.webp" alt="Snow" style="width:100%"height="600px">
+        
+       
+      <section class="courses">
+        <h2>the best visited</h2>
+        <div class="course-container">
+            <div class="course-card">
+                <img src="galary/download (8).jpg">
+                <h3>St.Yemrehana Krestos Church</h3>
+                <h4>The cavern and church are located at Coordinates: 12°8'22"N 39°4'19"E. The church was constructed in large northeast-facing cavern on the west side of Mount Abuna Yosef. The site is located 12.2 km directly north-east of Lalibela and until the construction of a road in 2000, according to David Phillipson, this church was reachable only after "a long day's arduous journey on foot or mule." The nearest town is Bilbala, about 10 km to the west.</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+              <img src="images (1).jfif" />
+                <h3>St.lalibela church</h3>
+                <h3>Surprise Lalibela tours is a Lalibela based tour operator company providing customized and packaged tours throughout Ethiopia. We specialize in creating well though-out tours that fit the needs of our clients. </h3>
+
+                
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+                <img src="galary/download (13).jpg">
+                <h3>St.Na'akueto La'ab church</h3>
+                <h4>Na'akueto La'ab  was the King of Zagwe dynasty. According to Taddesse Tamrat, he was the son of Kedus Harbe.[1] Richard Pankhurst credits him with the creation of the church located in a cave a half-day's journey from the town of Lalibela.[2] According to a manuscript Pedro Páez and Manuel de Almeida saw at Axum, Na'akueto La'ab ruled for 40 years, a suspiciously round number.</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+    </section>
+    <section class="courses">
+           <div class="course-container">
+            <div class="course-card">
+                <img src="galary/download (15).jpg" >
+                <h3>Asheten Mariam monastery</h3>
+                <h4>Then there is the tiny Asheten Mariam monastery, built on the distinctive flat mountain above Lalibela, and accessed through a narrow rock crevice, a reminder</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+                <img src="galary/download (12).jpg">
+                <h3>Geneta Maryam monastery </h3>
+                <h4>Geneta Maryam is thought to have been built around 1270 by Yekuno Amlak, who restored the Solomonic line. With its rectangular shape and 20 massive rectangular .
+                  The research examines the significance of rock art at Bete Mariam in Lalibela, focusing on its biblical and archaeological interpretations. It highlights the representation of domestic and wild animals in Ethiopian rock art, emphasizing the cultural practices, religious symbolism, and naturalistic styles evident in the paintings and engravings.
+                </h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+                <img src="galary/download.jfif">
+                <h3> Abune Yosef</h3>
+                <h4> Trekking to the summit of the Abune Yosef is a rare experience. Over a couple of days, you climb gradually from 2,300m to the summit of Mount Abune Yosef (4,260m), passing through tiny villages and exploring ancient churches.  Although the views are truly impressive, visitors are often more awed by the culture and the lifestyle of the people who live in this mountainous region.</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            </div>
+    </section>
+ <div class="img">
+ <h3><center><img src="photo 1/timket.jpg" width="300px"height="150px"/>
+  </center>
+  
+ <p1>Lalibela, religious and pilgrimage centre, north-central Ethiopia. Roha, capital of the Zagwe dynasty for about 300 years, was renamed for its most distinguished monarch, Lalibela (late 12th early 13th century), who, according to tradition, built the 11 monolithic churches for which the place is famous.</p1><hr></h3></div>
+ 
+
+ 
+ <center><img src="galary/download (11).jpg"/></center>
+
+
+      <p>Surprise Lalibela tours  is a Lalibela based tour operator company providing customized and packaged tours throughout Ethiopia.
+	We specialize in creating well though-out tours that fit the needs of our clients. We gratify to family vacations, group tours, historical and  cultural tours,Muslims community and mosque, adventure holidays and so much more. Will provide a travel experience you will hard time forgetting.  Witness the magic of Ethiopians religious holidays, learn about the ancient kingdom that shaped Ethiopia on the Northern historical route, the real test of food and drink in the country, photography and walk valley,feel the thrill of adventure on an overland expedition into the Danakil depression, measure up the size of the Simien and Bale mountains from your tent, birding see endemic bird species in Ethiopia.</p> 
+	<center><img src="alimal/meskel.PNG" /> </center>
+	<p>Traveling to Ethiopia is an enriching experience whereby the visitors encounter an unforgettable land endowed in the history and culture dating about 3000 years. The visitors who come to Ethiopia are visibly surprised by historical heritages, natural beauty of its landscape, monuments and ruins, thatched roof and rock-hewn churches and mosques, diverse culture of its nation and nationalities, monolithic stele, more than 80 ethnic group, rivers and waterfalls, chain mountains, rift valley lake, unique flora and fauna.
+	Our company policy includes a concern about the environment and the impact of tourism on the lives of the local people living in the areas visited directly or indirectly. In accordance, our company encourages clients to be part of the economic and social development of Ethiopia.
+	Surprise Lalibela tours full of exclusive beauty the country opening eyes to memorable surprise!!</p>
+	<div class="cont"></div></div></div>
+	 <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+    </script>
+	 
+</body>
+<footer>
+  <h4>Contact us</h4>
+    <div class="social-buttons">
+        <button class="social-button"><i class="fab fa-facebook-f"></i></button>
+        <button class="social-button"><i class="fab fa-twitter"></i></button>
+        <button class="social-button"><i class="fab fa-instagram"></i></button>
+        <button class="social-button"><i class="fab fa-linkedin-in"></i></button>
+		<button class="social-button"><i class="fab fa-google"></i></button>
+		<button class="social-button"><i class="fab fa-telegram"></i></button>
+		
+		
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31217.775835120658!2d39.02564894454956!3d12.02823341906729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413ef09506c7fb%3A0x704aabe1eb572aa9!2z4Ymk4YmwIOGMiuGLruGIreGMiuGItQ!5e0!3m2!1sam!2set!4v1737018793950!5m2!1sam!2set" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  <center> &copy; 2016 Your Surprise Lalibela Tour. All rights reserved.</center>
+</footer>
+</html>

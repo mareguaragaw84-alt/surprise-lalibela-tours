@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>About us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+         function search(query){
+                if(query.slice(0, 7) == "http://"){
+                    window.location.href = query
+                }
+                else{
+                    window.location.href = "https://www.google.com/search?q=" + query
+                }
+            }
+        </script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+        function search(query){
+            if(query.slice(0, 7) == "http://"){
+                window.location.href = query
+            }
+            else{
+                window.location.href = "https://www.google.com/search?q=" + query
+            }
+        }
+    </script>
+<style>
+body{
+background-color:#FFFFFF;
+background-position:cover;
+padding:0px 10px 10px 3px;
+}
+header{
+width:100%;
+background-color:#000066;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding-left:0px;
+padding-top:0px;
+padding-right:0px;
+margin-top:auto;
+color:#FFFFFF;
+font-size:20px;
+}
+
+ol{
+list-style:none;
+display:flex;
+column: gap 45px;
+}
+ol li a{
+color:#FFFFFF;
+text-decoration:none;
+}
+ol li{
+position:relative;
+padding:15px;
+}
+ol ol{
+position:absolute;
+top:20%;
+background-color:#000066;
+display:none;
+width:250px;
+padding:10px 18px 15px 10px;
+
+}
+ol li:hover> ol{
+display:block;
+background-color:#000066;
+}
+header a:hover {
+background-color:#FF9900;
+}
+ol ol ol{
+position:absolute;
+top:0%;
+left:150px;
+ 
+}
+h1{
+
+color:#0000FF;
+text-align:center;
+padding:0px;
+top:0%
+}
+p{
+text-align:justify;
+margin-left: 200px;
+margin-right: 200px;
+}
+
+.img{
+width:50%;
+height:25%;
+text-align:center;
+top:10%;
+display:block;
+margin: 10px 300px ;
+color:#0066FF;
+}
+footer {
+    background-color: #343a40; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height:250px;
+}
+.social-button {
+    margin: 10px 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s; 
+}
+.address iframe {
+margin-top: 3px;
+border-radius: 5px;
+}
+
+
+.social-button:hover {
+    color: #007BFF;      
+
+}
+.scrollbars-visible {
+width: 100%;
+height: 550px;
+overflow: scroll; 
+}
+
+.search-bar {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        padding: 8px;
+        width: 200px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        background: #ff9900;
+        border: none;
+        padding: 8px 12px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .search-bar button:hover {
+        background:#0033FF;
+    }
+    .search-bar button img{
+    background:#FFFFFF;
+        border: none;
+        padding: 3px 3px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 10px;
+        width:25px;
+        height:22px;
+        }
+    .search-bar button:hover a{
+        background:#0000FF;
+    }
+    h3{
+    background-color:#FFFFFF;
+    color:black;
+    background-position:cover;
+    }
+.element-outline-border {
+border: 2px solid blue;
+outline: 2px dashed green;
+}
+.scrollbars-visibles {
+width: 100%;
+height: 200px;
+overflow: scroll; 
+}
+.centered {
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color:blue;
+}
+.courses {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .course-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .course-card h3 {
+            margin: 1rem 0;
+        }
+
+        .course-card p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .enroll-btn {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .enroll-btn:hover {
+            background: #2980b9;
+        }
+        h2{
+          color: #FFFFFF;
+        }
+		h4{
+		text-align:justify;
+		}
+        .menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align:left;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    
+}
+dropdown-menus {
+        position:absolute;
+        display:block;
+        
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+
+<div class="container">
+    <img src="photo 1/mas.jpg"width="100%"height="700px">
+	
+    <div class="centered"><h2>Discover the beauty of Lalibela</h2>
+        Explore the ancient wonders and rich culture of Lalibela with our exclusive tours.</div>
+  </div>
+
+
+<section class="courses">
+        <h2>the best visited</h2>
+        <div class="course-container">
+            <div class="course-card">
+                <img src="galary/images (1).jfif">
+                <h3> Bilbala kirkos church</h3>
+                <h4>Wow we've had a wonderful time traveling and living in different cities on various continents! We didn't make it around the world, but we did explore destinations in Central and South America, Europe, and northern and southern Africa. Along the way we have seen many beautiful landscapes, had flat tires, traffic fines, sprained wrists, blisters and a couple of picked pockets. </h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+              <img src="galary/download (1).jfif" height="50%" />
+                <h3>Arbatu Ensesa church</h3>
+                <h3>The site consists of two newly carved chambers. The first is carved into the south rock face while the second chamber lies to the right and is carved into the south east face. The southerly chamber was carved from 2002 (Gregorian calendar i.e. 1995 Ethiopian Calendar) and is raised slightly above the ground. The entrance is rectangular but the surfaces are otherwise unrefined.  </h3>
+
+                
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+                <img src="galary/download (2).jfif">
+                <h3>Gonder</h3>
+                <h4>Gondar was established in 1636 by Emperor Fasilides (r. 16321667) as the first permanent capital of the Ethiopian Empire, and chosen for strategical seat of the government and its fertile lands surrounded by Dambia and Wegera.Known for its remarkable collection of crumbling castles, fortifications and 17th century churches, Gonder is often referred to as the Camelot of Africa.King Fasil (Fasilidas) settled in Gondar and established it as a permanent capital in 1636.</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+    </section>
+    <section class="courses">
+           <div class="course-container">
+            <div class="course-card">
+                <img src="galary/download (3).jfif" >
+                <h3>Axum</h3>
+                <h4>Aksum, the capital city, was a metropolis with a peak population as high as 20,000. Aksum was also noteworthy for its elaborate monuments and written script, as well as for introducing the Christian religion to the rest of sub-Saharan Africa.his increased the importance of sea-based commerce to the regions near the Red Sea and allowed the Axum Empire to gain control in important areas by the African coasts. Eventually, it was destroyed by the rise of the Islamic civilizations in the North and East regions of Africa</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+                <img src="galary/download (4).jfif">
+                <h3>NAtional park in ethiopia </h3>
+                <h4>Gambella National Park, also spelled Gambela National Park, is a 5,016 km2 (1,937 sq mi) large national park in Ethiopia. It is the nation's largest national park and is located several hundred kilometers from Addis Ababa.
+                </h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            <div class="course-card">
+                <img src="galary/download (5).jfif">
+                <h3> forst in ethiopia</h3>
+                <h4> In the late nineteenth century, about 30% of Ethiopia was covered with forest. The clearing of land for agricultural use and the cutting of trees for fuel gradually changed the scene, and today forest areas have dwindled to less than 4% of Ethiopia's total land.</h4>
+                <button class="enroll-btn">visit Now</button>
+            </div>
+            </div>
+    </section>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size="4">Located in Lalibela, Mastewal (MAS) Laike I take pleasure in capturing the splash of the moment in a birds transient, yet diligent life, illustrating more than the spectrum of colors it resides in. when I started ten years ago as a tour guide, I was certain that I did not want to just take my guests to Aksum, Simian Mountains, Gonder, Harrar, Southern Ethiopia, Danakil Depression and my home,Lalibela.<br>About us</p>
+    <center><img src="galary/TOUR.jpg"></center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>I rather desired to hold a mirror against the suave visual imagery these panoramic sites of Ethiopia present to travelers, photographers, researchers, family holidaymakers, diplomats, hikers, pilgrims, stargazer, and bird watchers for them to reflect and converse with its picturesque nature, history and culture. Enthused by the experience of being sought by the celebrated photographers Harry Fisch after his chance encounter with my photographs capturing scenic landscapes, birds of horn of Africa and cultural lives across Ethiopia, I continue to introspect and rediscover the world around me though ever fresh perspectives. This greatly helped me to learn, share and offer a spectrum of narratives to the visitors including the consciousness of my community toward an ecological commitment to a life intimately entwined with local flora and fauna.</p>
+
+.</p> <br />
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
+
+</body>
+<footer>
+    <h4>Contact us</h4>
+      <div class="social-buttons">
+          <button class="social-button"><i class="fab fa-facebook-f"></i></button>
+          <button class="social-button"><i class="fab fa-twitter"></i></button>
+          <button class="social-button"><i class="fab fa-instagram"></i></button>
+          <button class="social-button"><i class="fab fa-linkedin-in"></i></button>
+          <button class="social-button"><i class="fab fa-google"></i></button>
+          <button class="social-button"><i class="fab fa-telegram"></i></button> 
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31217.775835120658!2d39.02564894454956!3d12.02823341906729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413ef09506c7fb%3A0x704aabe1eb572aa9!2z4Ymk4YmwIOGMiuGLruGIreGMiuGItQ!5e0!3m2!1sam!2set!4v1737018793950!5m2!1sam!2set" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p> 2016 Your Surprise Lalibela Tour. All rights reserved.</p>
+  </footer>
+</html>

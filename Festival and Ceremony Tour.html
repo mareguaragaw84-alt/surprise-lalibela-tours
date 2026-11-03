@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Festival and cermony</title>
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+<style>
+body{
+  background-color:#FFFFFF;
+  background-position:cover;
+  padding:0px 10px 10px 3px;
+}
+header{
+ width:100%;
+ background-color:#000066;
+ display:flex;
+ justify-content:space-between;
+align-items:center;
+ padding-left:0px;
+ padding-top:0px;
+ padding-right:0px;
+ margin-top:auto;
+ color:#FFFFFF;
+ font-size:20px;
+}
+
+ ol{
+ list-style:none;
+ display:flex;
+ column: gap 45px;
+}
+ol li a{
+  color:#FFFFFF;
+  text-decoration:none;
+ }
+ ol li{
+ position:relative;
+ padding:15px;
+ }
+ ol ol{
+ position:absolute;
+ top:20%;
+ background-color:#000066;
+ display:none;
+ width:250px;
+ padding:10px 18px 15px 10px;
+
+}
+ol li:hover> ol{
+   display:block;
+   background-color:#000066;
+  }
+  header a:hover {
+  background-color:#FF9900;
+ }
+ ol ol ol{
+   position:absolute;
+   top:0%;
+   left:150px;
+     
+}
+h1{
+
+color:#0000FF;
+text-align:center;
+padding:0px;
+top:0%
+}
+p{
+text-align:justify;
+margin-left: 200px;
+margin-right: 200px;
+}
+
+.img{
+width:50%;
+height:25%;
+text-align:center;
+top:10%;
+display:block;
+margin: 10px 300px ;
+color:#0066FF;
+}
+  footer {
+        background-color: #343a40; 
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		height:250px;
+    }
+.social-button {
+        margin: 10px 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s; 
+    }
+    .address iframe {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+    
+
+    .social-button:hover {
+        color: #007BFF;      
+	
+}
+.scrollbars-visible {
+    width: 100%;
+    height: 550px;
+    overflow: scroll; 
+}
+
+.search-bar {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: #ff9900;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .search-bar button:hover {
+            background:#0033FF;
+        }
+		.search-bar button img{
+		background:#FFFFFF;
+            border: none;
+            padding: 3px 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+			width:25px;
+			height:22px;
+			}
+		.search-bar button:hover a{
+            background:#0000FF;
+        }
+		h3{
+		background-color:#FFFFFF;
+		color:black;
+		background-position:cover;
+		}
+.element-outline-border {
+    border: 2px solid blue;
+    outline: 2px dashed green;
+}
+    .scrollbars-visibles {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; 
+    }
+	.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ff9900;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.menu {
+    padding: 40px 20px;
+    background: white;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+	background-color:#6666FF;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+	text-align:center;
+	margin-right:10%;
+	margin-left:10%;
+}
+
+.menu-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+	
+}
+
+.menu-details {
+    display: inline-block;
+}
+
+.menu-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+	background-color:#66CCCC;
+}
+
+.menu-details p {
+    margin: 5px 0;
+}
+.menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align:left;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: black;
+
+    }
+    
+    .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ff9900;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.menu {
+    padding: 40px 20px;
+    background: white;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+	background-color:#6666FF;
+}
+
+.menu-item {
+    display:block;
+    align-items: center;
+    gap: 20px;
+    
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+	text-align:center;
+	margin-right:10%;
+	margin-left:10%;
+}
+
+.menu-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+	
+}
+
+.menu-details {
+    display: inline-block;
+}
+
+.menu-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+	background-color:#66CCCC;
+}
+
+.menu-details p {
+    margin: 5px 0;
+}
+dropdown-menus {
+        position:absolute;
+        display:block;
+        
+}
+}
+
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+
+ <div class="scrollbars-visible">
+   <img src="galary/rs55982_dscn0538.jpg" width="100%" height="500px">
+<section class="hero">
+        <h1>Welcome to festival and ceremony</h1>
+        <p>Celebrations in Ethiopia are great and colorful events, mostly religious, and frequently take place over several days. Important Christian holidays include Meskel, Christmas, Timkat, Kiddus Yohannes and Easter.Ceremony and Festival are both terms representing forms of collective activities, but they diverge significantly in their essence and scope. A ceremony is generally a formal, ritualistic event often marked by traditions and specific protocols. It usually holds a symbolic significance and is performed on special occasions, such as weddings or award ceremonies, to give formal recognition or to honor specific achievements, transitions, or occasions. In contrast, a festival is a broader term depicting a day or period dedicated to the celebration, feasting, or commemoration, often with a religious or cultural significance, like a harvest festival, and it usually includes various activities, entertainments, and communal participations.
+
+</p>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Ethiopias Festivals and Celebrationsu</h2>
+        <div class="menu-item">
+            <img src="galary/tfq2oopjzqm1kitkgsif.webp" width="40%">
+            <div class="menu-details">
+                <h3>Genna</h3>
+                <p><u>Genna</u>: Christmas in Ethiopia is called Genna or Liddet and you guessed it, its on a different date as they follow the Julian calendar for this. Celebrated on January 7th, thousands of pilgrims from all over Ethiopia come to town for this event. Starting January 4th, different ceremonies take place around the rock-hewn churches of Lalibela and many people from all over the world come to witness and experience this.The Ethiopian game genna,1 which resembles field hockey, is played during the Christmas season. Although football has now surpassed genna in popularity, the game is traditionally considered by many Ethiopians to be one of the country's most ancient and popular outdoor games.In Ethiopia, Christmas is called 'Gena' and it means 'a day of glory'. The naming of the day as Gena has a direct connection with the birth of our Lord Jesus Christ.The Christmas celebration in the Ethiopian Orthodox Church is called Ganna or Genna. Most people go to Church on Christmas day. Many people take part in a special Advent fast during the 43 days before Christmas. It starts on 25th November and is known as the 'Fast of the Prophets' (Tsome Nebiyat).</p>
+                
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="galary/images (3).jfif">
+            <div class="menu-details">
+                <h3>Timkat </h3>
+                <p>Timkat  is an Ethiopian Orthodox Tewahedo Church and Eritrean Orthodox Tewahedo Church celebration of Epiphany. It is celebrated on 19 January (or 20 in a leap year), corresponding to the 11th day of Terr in the Ge'ez calendar.Timket, the Ethiopian Epiphany is one of the two biggest events on the Ethiopian social calendar. Annually it starts with the preparations or Ketera on 18 January and the festivities continue until 20 January.This is the Timkat Festival, Ethiopia's most important celebration, which takes place every year on the 19th January throughout the country. Ethiopia is a fascinating place to visit any time of year, though Timkat shows Ethiopia at its most thrilling and joyous.Ethiopian Timket (Epiphany)- Registered by UNESCO as Cultural Heritage.Food. The typical food eaten at Timkat is Injera, an Ethiopian flatbread that is filled with various meat and vegetables, and eaten with their hands. Doro Wat, an Ethiopian spiced chicken dish, is one of the nation's most well-known dishes and is also eaten during Timkat.</p>
+               
+            </div>
+        </div>
+		<div class="menu-item">
+            <img src="galary/download (11).jfif">
+            <div class="menu-details">
+                <h3>Fasika</h3>
+                <p>Fasika is the Amharic word for Easter, and refers to the 55-days where Ethiopians celebrate their most important festival of the year.The Fast of Great Lent
+
+Great Lent lasts 55 days, which includes traditional 40 days that Christ fasted on the mountain, plus a week before for varying reasons and a week after, as penance for Holy Week. It precedes Palm Sunday, and the Holy Week, which precede Easter.At 3 am everyone returns home to break their fast, slaughtering a chicken at midnight for the symbolic occasion. After a short rest, the celebration of Fasika continues with family and usually includes the slaughtering of a sheep or ox.Green, yellow, and red - the colours of the Ethiopian flag - paint the streets of this Christian country during their largest festival of the year: Timkat. As the Ethiopian celebration of Epiphany, it is an incredibly important and spiritual occasion for the people who live here.</p>
+                
+            </div>
+        </div>
+		<div class="menu-item">
+            <img src="galary/download (7).jfif" width="50%">
+            <div class="menu-details">
+                <h3>ASHENDA</h3>
+                <p>ASHENDA (also called, Shadey, Ashendye, Solel, Mariya) is a festival of girls and young women that is celebrated in northern Ethiopia, in the Amhara and Tigray regions. It is usually held every year between August 16 and 26.The name Ashenda  originates from the Tigrinya and Amharic word for a type of tall green grass, which grows in the Tigray region. During the festival, girls and women use this grass as part of their attire, often weaving it into skirts or carrying it as decorative bundles on their backs.Ashenda is a festival celebrated in August in the Ethiopian regions of Tigray and Northern Amhara. In this ceremony there will be great traditional songs sung by girls coming from all over the villages and they will be wearing Ashenda.</p>
+                
+            </div>
+        </div>
+		<div class="menu-item">
+            <img src="galary/download (9).jfif">
+            <div class="menu-details">
+                <h3>new year(yihoans) </h3>
+                <p>The new year is known as Enkutatash and is celebrated with the phrase "Melkam Addis Amet," which means "Happy New Year." The Ethiopian calendar is approximately 7 to 8 years behind the Gregorian calendar.Enkutatash  is a public holiday in coincidence of New Year in Ethiopia and Eritrea. It occurs on Meskerem 1 on the Ethiopian calendar, which is 11 September (or, during a leap year, 12 September) according to the Gregorian calendar."Enkutatash, which can be translated as 'gift of jewels,' marks the end of the rainy season and the beginning of a new year according to the Ethiopian calendar," says Geda. "As such, it is a celebration of renewal and hope. Bright yellow flowers blanket the landscape, symbolizing a new cycle of life and prosperity."</p>
+                
+            </div>
+        </div>
+		<div class="menu-item">
+            <img src="galary/caption.jpg" width="50%">
+            <div class="menu-details">
+                <h3>Meskel </h3>
+                <p>Meskel is a festival in celebration of Helena, mother of Emperor Constantine, finding the true cross upon which Jesus was crucified. Mirrored in many ways by Ash Wednesday in the west, the festival competes for top billing and is considered the most important festival for the laity and ordained alike."Meskel" (or "Meskal" or "Mesqel", there are various ways to transliterate from Ge'ez to Latin script) is Amharic for "cross".Each September, a new season is signified by the blossoming of the Meskel flower, known as the Adey Abeba in the Amharic language. It has come to represent beauty and survival in equal measure, reviving itself every year without fail across Ethiopian highlands despite harsh ecological conditions.</p>
+                
+            </div>
+        </div>
+		<div class="menu-item">
+            <img src="galary/F7cjE6fXEAAyRWU.jpg_large" height="2%" width="50%">
+            <div class="menu-details">
+                <h3>Gishen Debre Kerbe </h3>
+                <p>Gishen Debre Kerbe  also simply known as Debre Kerbe or Debre Gishen, is an Ethiopian Orthodox Tewahedo Church monastery located in Ambassel woreda, in South Wollo Zone, Amhara Region, Ethiopia, 483 kilometers north of Addis Ababa. It was founded by Aksumite king Kaleb in the 5th century with the auspice of Nine Saints from Byzantine Empire.
+
+According to tradition, Gishen Debre Kerbe was one of the Ethiopian Orthodox Churches to receive piece of True Cross transported through Saint Helena of Constantinople, through which Meskel festival is the basis festivity of the church. According to some manuscripts of Ethiopian Orthodox, the piece of True Cross was brought by Emperor Zara Yaqob with whom Jesus crucified to "Gishen Amba" and buried under the church of God. The church is known for receiving mass pilgrimages per year. According to the World Health Organization (WHO) in 2010, the monastery received 350,000�500,000 pilgrims and tourists per each year.</p>
+                
+            </div>
+        </div>
+		<div class="menu-item">
+            <img src="galary/e7_ETH20Yemre-1.avif" height="10%" width="50%">
+            <div class="menu-details">
+                <h3>Yemrehanna Kristos </h3>
+                <p>The church of Yemrehanna Kristos is one of Ethiopia's best-preserved late Axumite churches, and is named for a twelfth-century Zagwe priest-king and saint. It is set in a spectacular landscape of juniper trees located inside a large natural cavern on a hill in northern Ethiopia, predating the famous nearby rock-hewn churches of Lalibela by almost a century. The walls of the building were constructed with alternating layers of recessed timber beams and projecting plastered stone, and the windows are covered by carved cruciform lattices. The interior is divided into a nave and two side aisles by masonry pillars and arches, with a domed sanctuary on the east end. All interior wood surfaces, including the paneled ceilings, are elaborately decorated with carved geometric designs and polychrome. </p>
+                
+            </div>
+        </div>
+    </section>
+
+</div>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
+</body>
+<footer>
+    <footer>
+        <h4>Contact us</h4>
+          <div class="social-buttons">
+              <button class="social-button"><i class="fab fa-facebook-f"></i></button>
+              <button class="social-button"><i class="fab fa-twitter"></i></button>
+              <button class="social-button"><i class="fab fa-instagram"></i></button>
+              <button class="social-button"><i class="fab fa-linkedin-in"></i></button>
+              <button class="social-button"><i class="fab fa-google"></i></button>
+              <button class="social-button"><i class="fab fa-telegram"></i></button>
+              
+              
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31217.775835120658!2d39.02564894454956!3d12.02823341906729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413ef09506c7fb%3A0x704aabe1eb572aa9!2z4Ymk4YmwIOGMiuGLruGIreGMiuGItQ!5e0!3m2!1sam!2set!4v1737018793950!5m2!1sam!2set" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p align="left">&copy; 2016 Your Surprise Lalibela Tour. All rights reserved.</p>
+      </footer>
+</html>

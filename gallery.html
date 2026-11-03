@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Gallery</title>
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+<!--
+function search(query){
+                if(query.slice(0, 7) == "http://"){
+                    window.location.href = query
+                }
+                else{
+                    window.location.href = "https://www.google.com/search?q=" + query
+                }
+            }
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style>
+body{
+    background-image:url(galary/download\ \(1\).jpg);
+    background-position:cover;
+  padding:0px 10px 10px 3px;
+  background-attachment: fixed;
+  background-repeat:repeat;
+  
+}
+header{
+ width:100%;
+ background-color:#000066;
+ display:flex;
+ justify-content:space-between;
+align-items:center;
+ padding-left:0px;
+ padding-top:0px;
+ padding-right:0px;
+ margin-top:auto;
+ color:#FFFFFF;
+ font-size:20px;
+}
+
+ ol{
+ list-style:none;
+ display:flex;
+ column: gap 45px;
+}
+ol li a{
+  color:#FFFFFF;
+  text-decoration:none;
+ }
+ ol li{
+ position:relative;
+ padding:15px;
+ }
+ ol ol{
+ position:absolute;
+ top:20%;
+ background-color:#000066;
+ display:none;
+ width:250px;
+ padding:10px 18px 15px 10px;
+
+}
+ol li:hover> ol{
+   display:block;
+   background-color:#000066;
+  }
+  header a:hover {
+  background-color:#FF9900;
+ }
+ ol ol ol{
+   position:absolute;
+   top:0%;
+   left:150px;
+     
+}
+h1{
+
+color:#0000FF;
+text-align:center;
+padding:0px;
+top:0%
+}
+p{
+text-align:justify;
+margin-left: 200px;
+margin-right: 200px;
+color:black;
+background-color: #fff;
+}
+  footer {
+        background-color: #344036; 
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		height:250px;
+    }
+.social-button {
+        margin: 10px 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s; 
+    }
+    .address iframe {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+    
+
+    .social-button:hover {
+        color: #007BFF;      
+	
+}
+.scrollbars-visible {
+    width: 100%;
+    height: 550px;
+    overflow: scroll; 
+}
+
+.search-bar {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: #ff9900;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .search-bar button:hover {
+            background:#0033FF;
+        }
+		.search-bar button img{
+		background:#FFFFFF;
+            border: none;
+            padding: 3px 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+			width:25px;
+			height:22px;
+			}
+		.search-bar button:hover a{
+            background:#0000FF;
+        }
+		h3{
+		background-color:#FFFFFF;
+		color:black;
+		background-position:cover;
+		}
+.element-outline-border {
+    border: 2px solid blue;
+    outline: 2px dashed green;
+}
+    .scrollbars-visibles {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; 
+	}
+	.img{
+	 
+	 width:100%;
+	 height:50%;
+	 margin:10px 20px 30px 40px;
+	 padding:10px;
+	 display:table;
+	}
+	
+	.slideshow-container {
+  max-width: 1000px;
+  position:relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ee0f0f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+    
+}
+	
+	
+  .menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align:left;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+    
+}
+dropdown-menus {
+        position:absolute;
+        display:block;
+        
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+ <div class="scrollbars-visible">
+  <ol class="dropdown-menu">
+  <div class="img">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="photo 1/14.jpg" style="width:100%"height="400px">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/download (4).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="photo 1/images (5).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (6).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/download (6).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Five</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/download.jpg" style="width:100%"height="400px">
+        <div class="text">Caption six</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (9).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Seven</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/download (3).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Eight</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (4).jpg" style="width:100%"height="400px">
+        <div class="text">Caption Nine</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (3).jpg" style="width:100%"height="400px">
+        <div class="text">Caption ten</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (8).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 11</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (10).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 12</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/download (9).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 13</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (12).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 14</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images.jpg" style="width:100%"height="400px">
+        <div class="text">Caption 15</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/download (1).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 16</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (11).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 17</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (12).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 18</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/koso.jpg" style="width:100%"height="400px">
+        <div class="text">Caption 19</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo 1/images (12).jpg" style="width:100%"height="400px">
+        <div class="text">Caption 20</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+      <a href="../www/Gallery/IMG_20191025_053936_243.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image76','','../www/Gallery/IMG_20191025_053936_243.jpg',1)"><img src="../www/Gallery/IMG_20191025_053936_243.jpg" name="Image76" width="100%" height="400" border="0" id="Image76" /></a>
+        <div class="text">Caption 21</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="../www/Gallery/P1100034.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image66','','../www/Gallery/P1100034 (2).JPG',1)"><img src="../www/Gallery/P1100034.JPG" name="Image66" width="100%" height="400px" border="0" id="Image66" /></a>
+        <div class="text">Caption 22</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="../www/Gallery/P1100058.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','../www/Gallery/P1100058.JPG',1)"><img src="../www/Gallery/P1100058.JPG" name="Image8" width="100%" height="400px" border="0" id="Image8" /></a>
+        <div class="text">Caption 23</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="../www/Gallery/IMG_20191023_160655_313.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../www/Gallery/IMG_20191023_160655_313.jpg',1)"><img src="../www/Gallery/IMG_20191023_160655_313.jpg" name="Image9" width="100%" height="400" border="0" id="Image9" /></a>
+        <div class="text">Caption 24</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="../www/Gallery/22725999294_4365337ab3_z.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','../www/Gallery/22725999294_4365337ab3_z.jpg',1)"><img src="../www/Gallery/22725999294_4365337ab3_z.jpg" name="Image13" width="100%" height="400px" border="0" id="Image13" /></a>
+        <div class="text">Caption 25</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-right" style="font-size: 38px; color: #0000FF;"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right" style="font-size: 38px; color: #0000FF;"></i></a>
+      
+      </div>
+      <br>
+      <ol class="dropdown-menu">
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+        <span class="dot" onclick="currentSlide(10)"></span> 
+        <span class="dot" onclick="currentSlide(11)"></span> 
+        <span class="dot" onclick="currentSlide(12)"></span> 
+        <span class="dot" onclick="currentSlide(13)"></span> 
+        <span class="dot" onclick="currentSlide(13)"></span> 
+        <span class="dot" onclick="currentSlide(14)"></span> 
+        <span class="dot" onclick="currentSlide(15)"></span> 
+        <span class="dot" onclick="currentSlide(16)"></span> 
+        <span class="dot" onclick="currentSlide(17)"></span> 
+        <span class="dot" onclick="currentSlide(18)"></span> 
+        <span class="dot" onclick="currentSlide(19)"></span> 
+        <span class="dot" onclick="currentSlide(20)"></span> 
+        <span class="dot" onclick="currentSlide(21)"></span> 
+        <span class="dot" onclick="currentSlide(22)"></span> 
+        <span class="dot" onclick="currentSlide(23)"></span> 
+        <span class="dot" onclick="currentSlide(24)"></span> 
+        <span class="dot" onclick="currentSlide(25)"></span> 
+        
+      </div>
+      </ol>
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      <ol class="dropdown-menu">
+  <img src="photo 1/14.jpg" />
+  <img src="photo 1/download (4).jpg" />
+  <img src="photo 1/13.jpg" />
+  <img src="photo 1/download (7).jpg" />
+  <img src="photo 1/images (5).jpg" />
+  <img src="photo 1/images (6).jpg" />
+  <img src="photo 1/download (6).jpg" />
+  <img src="photo 1/download.jpg" />
+  <img src="photo 1/images (9).jpg" />
+  <img src="photo 1/download (3).jpg" />
+  <img src="photo 1/images (4).jpg" />
+  <img src="photo 1/images (3).jpg" />
+  <img src="photo 1/images (8).jpg" />
+  <img src="photo 1/images (10).jpg" />
+  <img src="photo 1/download (9).jpg" />
+  <img src="photo 1/images (12).jpg" />
+  <img src="photo 1/images.jpg" />
+  <img src="photo 1/images (1).jpg" />
+  <img src="photo 1/timket.jpg" />
+  <img src="photo 1/download (1).jpg" />
+  <img src="photo 1/images (11).jpg" />
+  <img src="photo 1/images (12).jpg" />
+  <img src="photo 1/koso.jpg" />
+  <img src="photo 1/mariam.jpg" /></div></ol>
+  <br>
+ 
+<hr />  
+
+
+<a href="../www/Gallery/IMG_20191025_053936_243.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image76','','../www/Gallery/IMG_20191025_053936_243.jpg',1)">
+  <img src="../www/Gallery/IMG_20191025_053936_243.jpg" name="Image76" width="50%" height="400" border="0" id="Image76" /></a><a href="../www/Gallery/P1100034.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image66','','../www/Gallery/P1100034 (2).JPG',1)"><img src="../www/Gallery/P1100034.JPG" name="Image66" width="50%" height="400" border="0" id="Image66" /></a><a href="../www/Gallery/P1100058.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','../www/Gallery/P1100058.JPG',1)"><img src="../www/Gallery/P1100058.JPG" name="Image8" width="50%" height="400" border="0" id="Image8" /></a><a href="../www/Gallery/IMG_20191023_160655_313.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../www/Gallery/IMG_20191023_160655_313.jpg',1)"><img src="../www/Gallery/IMG_20191023_160655_313.jpg" name="Image9" width="50%" height="400" border="0" id="Image9" /></a><a href="../www/Gallery/22725999294_4365337ab3_z.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','../www/Gallery/22725999294_4365337ab3_z.jpg',1)"><img src="../www/Gallery/22725999294_4365337ab3_z.jpg" name="Image13" width="50%" height="400" border="0" id="Image13" /></a><a href="../www/Gallery/23058652140_167ec5e314_z (1).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','../www/Gallery/23058652140_167ec5e314_z (1).jpg',0)"><img src="../www/Gallery/23058652140_167ec5e314_z (1).jpg" name="Image14" width="50%" height="400" border="0" id="Image14" /></a><a href="../www/Gallery/ethio wonder.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','../www/Gallery/ethio wonder.jpg',1)"><img src="../www/Gallery/ethio wonder.jpg" name="Image15" width="50%" height="400" border="0" id="Image15" /></a><a href="../www/Gallery/f34cd41cb8720b237d12501c4208ad3d9906eb4127f8777ff02aebe14e2d57e4 (1).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','../www/Gallery/f34cd41cb8720b237d12501c4208ad3d9906eb4127f8777ff02aebe14e2d57e4 (1).jpg',1)"><img src="../www/Gallery/f34cd41cb8720b237d12501c4208ad3d9906eb4127f8777ff02aebe14e2d57e4 (1).jpg" name="Image16" width="50%" height="400" border="0" id="Image16" /></a><a href="../www/Gallery/FB_IMG_15464018970067820.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','../www/Gallery/FB_IMG_15464018970067820.jpg',1)"><img src="../www/Gallery/FB_IMG_15464018970067820.jpg" name="Image17" width="50%" height="400" border="0" id="Image17" /></a><a href="../www/Gallery/Greater Blue-eared Starling.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image18','','../www/Gallery/Greater Blue-eared Starling.jpg',1)"><img src="../www/Gallery/Greater Blue-eared Starling.jpg" name="Image18" width="50%" height="400" border="0" id="Image18" /></a><a href="../www/Gallery/IMG_20161225_213756.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','../www/Gallery/IMG_20161225_213756.jpg',1)"><img src="../www/Gallery/IMG_20161225_213756.jpg" name="Image19" width="50%" height="400" border="0" id="Image19" /></a><a href="../www/Gallery/IMG_20190730_072245_903.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','../www/Gallery/IMG_20190730_072245_903.jpg',1)"><img src="../www/Gallery/IMG_20190730_072245_903.jpg" name="Image20" width="50%" height="400" border="0" id="Image20" /></a><a href="../www/Gallery/IMG_20190902_210844_134.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','../www/Gallery/IMG_20190902_210844_134.jpg',1)"><img src="../www/Gallery/IMG_20190902_210844_134.jpg" name="Image21" width="50%" height="400" border="0" id="Image21" /></a><a href="../www/Gallery/IMG_20190903_232434_772.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','../www/Gallery/IMG_20190903_232434_772.jpg',1)"><img src="../www/Gallery/IMG_20190903_232434_772.jpg" name="Image22" width="50%" height="400" border="0" id="Image22" /></a><a href="../www/Gallery/IMG_20190903_232434_803.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','../www/Gallery/IMG_20190903_232434_803.jpg',1)"><img src="../www/Gallery/IMG_20190903_232434_803.jpg" name="Image23" width="50%" height="400" border="0" id="Image23" /></a><a href="../www/Gallery/IMG_20190903_232442_904.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image25','','../www/Gallery/IMG_20190903_232442_904.jpg',1)"><img src="../www/Gallery/IMG_20190903_232442_904.jpg" name="Image25" width="50%" height="400" border="0" id="Image25" /></a><a href="../www/Gallery/IMG_20190903_232442_983.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image26','','../www/Gallery/IMG_20190903_232442_983.jpg',1)"><img src="../www/Gallery/IMG_20190903_232442_983.jpg" name="Image26" width="50%" height="400" border="0" id="Image26" /></a><a href="../www/Gallery/IMG_20190913_170136.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image27','','../www/Gallery/IMG_20190913_170136.jpg',1)"><img src="../www/Gallery/IMG_20190913_170136.jpg" name="Image27" width="50%" height="400" border="0" id="Image27" /></a><a href="../www/Gallery/IMG_20190913_170211.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image28','','../www/Gallery/IMG_20190913_170211.jpg',1)"><img src="../www/Gallery/IMG_20190913_170211.jpg" name="Image28" width="50%" height="400" border="0" id="Image28" /></a><a href="galary1/blak winged lovebird.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image77','','galary1/blak winged lovebird.jpg',1)"><img src="galary1/blak winged lovebird.jpg" name="Image77" width="50%" height="400" border="0" id="Image77" /></a><a href="galary1/BlueWingedGoose.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image78','','galary1/BlueWingedGoose.jpg',1)"><img src="galary1/BlueWingedGoose.jpg" name="Image78" width="50%" height="400" border="0" id="Image78" /></a><a href="../www/Gallery/IMG_20190917_072133_676.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','../www/Gallery/IMG_20190917_072133_676.jpg',1)"><img src="../www/Gallery/IMG_20190917_072133_676.jpg" name="Image29" width="50%" height="400" border="0" id="Image29" /></a><a href="../www/Gallery/IMG_20190928_113730.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image30','','../www/Gallery/IMG_20190928_113730.jpg',1)"><img src="../www/Gallery/IMG_20190928_113730.jpg" name="Image30" width="50%" height="400" border="0" id="Image30" /></a><a href="../www/Gallery/IMG_20200106_203129_507.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image31','','../www/Gallery/IMG_20200106_203129_507.jpg',1)"><img src="../www/Gallery/IMG_20200106_203129_507.jpg" name="Image31" width="50%" height="400" border="0" id="Image31" /></a><a href="../www/Gallery/IMG_20200203_070839_093.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image32','','../www/Gallery/IMG_20200203_070839_093.jpg',1)"><img src="../www/Gallery/IMG_20200203_070839_093.jpg" name="Image32" width="50%" height="400" border="0" id="Image32" /></a><a href="../www/Gallery/IMG_20200204_143549_535.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image33','','../www/Gallery/IMG_20200204_143549_535.jpg',1)"><img src="../www/Gallery/IMG_20200204_143549_535.jpg" name="Image33" width="50%" height="400" border="0" id="Image33" /></a> <a href="galary1/collored.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image79','','galary1/collored.jpg',1)"><img src="galary1/collored.jpg" name="Image79" width="49.5%" height="400" border="0" id="Image79" /></a> <a href="galary1/download (3).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image80','','galary1/download (3).jpg',1)"><img src="galary1/download (3).jpg" name="Image80" width="49.5%" height="400" border="0" id="Image80" /></a><a href="galary1/download (4).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image81','','galary1/download (4).jpg',1)"><img src="galary1/download (4).jpg" name="Image81" width="50%" height="400" border="0" id="Image81" /></a><a href="../www/Gallery/IMG_20200209_122323_359.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image34','','../www/Gallery/IMG_20200209_122323_359.jpg',1)"><img src="../www/Gallery/IMG_20200209_122323_359.jpg" name="Image34" width="50%" height="400" border="0" id="Image34" /></a><a href="../www/Gallery/IMG_20200326_205436_743.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image35','','../www/Gallery/IMG_20200326_205436_743.jpg',1)"><img src="../www/Gallery/IMG_20200326_205436_743.jpg" name="Image35" width="50%" height="400" border="0" id="Image35" /></a><a href="../www/Gallery/IMG_20200409_195055_523.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image36','','../www/Gallery/IMG_20200409_195055_523.jpg',1)"><img src="../www/Gallery/IMG_20200409_195055_523.jpg" name="Image36" width="50%" height="400" border="0" id="Image36" /></a><a href="../www/Gallery/IMG-20191010-WA0001.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image37','','../www/Gallery/IMG-20191010-WA0001.jpg',1)"><img src="../www/Gallery/IMG-20191010-WA0001.jpg" name="Image37" width="50%" height="400" border="0" id="Image37" /></a><a href="../www/Gallery/mas birding.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image38','','../www/Gallery/mas birding.jpg',1)"><img src="../www/Gallery/mas birding.jpg" name="Image38" width="50%" height="400" border="0" id="Image38" /></a><a href="../www/Gallery/mas.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image91','','../www/Gallery/mas.jpg',1)"><img src="../www/Gallery/mas.jpg" name="Image91" width="50%" height="400" border="0" id="Image91" /></a><a href="../www/Gallery/my land.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image40','','../www/Gallery/my land.jpg',1)"><img src="../www/Gallery/my land.jpg" name="Image40" width="50%" height="400" border="0" id="Image40" /></a><a href="../www/Gallery/P1080564.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image41','','../www/Gallery/P1080564.JPG',1)"><img src="../www/Gallery/P1080564.JPG" name="Image41" width="50%" height="400" border="0" id="Image41" /></a><a href="../www/Gallery/P1080570.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image42','','../www/Gallery/P1080570.JPG',1)"><img src="../www/Gallery/P1080570.JPG" name="Image42" width="50%" height="400" border="0" id="Image42" /></a><a href="../www/Gallery/P1080575.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image43','','../www/Gallery/P1080575.JPG',1)"><img src="../www/Gallery/P1080575.JPG" name="Image43" width="50%" height="400" border="0" id="Image43" /></a><a href="../www/Gallery/P1090063.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image44','','../www/Gallery/P1090063.JPG',1)"><img src="../www/Gallery/P1090063.JPG" name="Image44" width="50%" height="400" border="0" id="Image44" /></a><a href="../www/Gallery/P1080639.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image45','','../www/Gallery/P1080639.JPG',1)"><img src="../www/Gallery/P1080639.JPG" name="Image45" width="50%" height="400" border="0" id="Image45" /></a><a href="../www/Gallery/P1090830.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image46','','../www/Gallery/P1090830.JPG',1)"><img src="../www/Gallery/P1090830.JPG" name="Image46" width="50%" height="400" border="0" id="Image46" /></a><a href="../www/Gallery/P1100003.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image47','','../www/Gallery/P1100003.JPG',1)"><img src="../www/Gallery/P1100003.JPG" name="Image47" width="50%" height="400" border="0" id="Image47" /></a><a href="../www/Gallery/P1100010.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image48','','../www/Gallery/P1100010.JPG',1)"><img src="../www/Gallery/P1100010.JPG" name="Image48" width="50%" height="400" border="0" id="Image48" /></a><a href="../www/Gallery/P1100022.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image49','','../www/Gallery/P1100022.JPG',1)"><img src="../www/Gallery/P1100022.JPG" name="Image49" width="50%" height="400" border="0" id="Image49" /></a><a href="../www/Gallery/P1100068.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image50','','../www/Gallery/P1100068.JPG',1)"><img src="../www/Gallery/P1100068.JPG" name="Image50" width="50%" height="400" border="0" id="Image50" /></a><a href="../www/Gallery/P1100069.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image51','','../www/Gallery/P1100069.JPG',1)"><img src="../www/Gallery/P1100069.JPG" name="Image51" width="50%" height="400" border="0" id="Image51" /></a><a href="../www/Gallery/P1100070.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image52','','../www/Gallery/P1100070.JPG',1)"><img src="../www/Gallery/P1100070.JPG" name="Image52" width="50%" height="400" border="0" id="Image52" /></a><a href="../www/Gallery/P1100079.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image53','','../www/Gallery/P1100079.JPG',1)"><img src="../www/Gallery/P1100079.JPG" name="Image53" width="50%" height="400" border="0" id="Image53" /></a><a href="../www/Gallery/P1100080.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image54','','../www/Gallery/P1100080.JPG',1)"><img src="../www/Gallery/P1100080.JPG" name="Image54" width="50%" height="400" border="0" id="Image54" /></a><a href="../www/Gallery/P1100081.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image55','','../www/Gallery/P1100081.JPG',1)"><img src="../www/Gallery/P1100081.JPG" name="Image55" width="50%" height="400" border="0" id="Image55" /></a><a href="../www/Gallery/P1100256.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image56','','../www/Gallery/P1100256.JPG',1)"><img src="../www/Gallery/P1100256.JPG" name="Image56" width="50%" height="400" border="0" id="Image56" /></a><a href="../www/Gallery/P1100352.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image57','','../www/Gallery/P1100352.JPG',1)"><img src="../www/Gallery/P1100352.JPG" name="Image57" width="50%" height="400" border="0" id="Image57" /></a><a href="../www/Gallery/P1100501.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image58','','../www/Gallery/P1100501.JPG',1)"><img src="../www/Gallery/P1100501.JPG" name="Image58" width="50%" height="400" border="0" id="Image58" /></a><a href="../www/Gallery/P1100502.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image59','','../www/Gallery/P1100502.JPG',1)"><img src="../www/Gallery/P1100502.JPG" name="Image59" width="50%" height="400" border="0" id="Image59" /></a><a href="../www/Gallery/P1100513.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image60','','../www/Gallery/P1100513.JPG',1)"><img src="../www/Gallery/P1100513.JPG" name="Image60" width="50%" height="400" border="0" id="Image60" /></a><a href="../www/Gallery/P1100538.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image61','','../www/Gallery/P1100538.JPG',1)"><img src="../www/Gallery/P1100538.JPG" name="Image61" width="50%" height="400" border="0" id="Image61" /></a><a href="../www/Gallery/P1100542.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image62','','../www/Gallery/P1100542.JPG',1)"><img src="../www/Gallery/P1100542.JPG" name="Image62" width="50%" height="400" border="0" id="Image62" /></a><a href="../www/Gallery/P1100889.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image63','','../www/Gallery/P1100889.JPG',1)"><img src="../www/Gallery/P1100889.JPG" name="Image63" width="50%" height="400" border="0" id="Image63" /></a><a href="../www/Gallery/P1110038.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image64','','../www/Gallery/P1110038.JPG',1)"><img src="../www/Gallery/P1110038.JPG" name="Image64" width="50%" height="400" border="0" id="Image64" /></a><a href="../www/Gallery/yotor tour.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image65','','../www/Gallery/yotor tour.jpg',1)"><img src="../www/Gallery/yotor tour.jpg" name="Image65" width="50%" height="400" border="0" id="Image65" /></a><a href="alimal/aclophya.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image67','','alimal/aclophya.PNG',1)"><img src="alimal/aclophya.PNG" name="Image67" width="50%" height="400" border="0" id="Image67" /></a><a href="alimal/ashenda.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image68','','alimal/ashenda.PNG',1)"><img src="alimal/ashenda.PNG" name="Image68" width="50%" height="400" border="0" id="Image68" /></a><a href="alimal/commun jackl.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image69','','alimal/commun jackl.PNG',1)"><img src="alimal/commun jackl.PNG" name="Image69" width="50%" height="400" border="0" id="Image69" /></a><a href="galary1/DSC01001.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image83','','galary1/DSC01001.JPG',1)"><img src="galary1/DSC01001.JPG" name="Image83" width="50%" height="400" border="0" id="Image83" /></a><a href="alimal/greater kuda 2.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image70','','alimal/greater kuda 2.PNG',1)"><img src="alimal/greater kuda 2.PNG" name="Image70" width="50%" height="890" border="0" id="Image70" /></a><a href="alimal/greater kuda.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image71','','alimal/greater kuda.PNG',1)"><img src="alimal/greater kuda.PNG" name="Image71" width="50%" height="" border="0" id="Image71" /></a><a href="alimal/menilk.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image72','','alimal/menilk.PNG',1)"><img src="alimal/menilk.PNG" name="Image72" width="50%" height="400" border="0" id="Image72" /></a><a href="alimal/niyal.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image73','','alimal/niyal.PNG',1)"><img src="alimal/niyal.PNG" name="Image73" width="50%" height="400" border="0" id="Image73" /></a><a href="alimal/red fox.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image74','','alimal/red fox.PNG',1)"><img src="alimal/red fox.PNG" name="Image74" width="50%" height="400" border="0" id="Image74" /></a><a href="alimal/walia.PNG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image75','','alimal/walia.PNG',1)"><img src="alimal/walia.PNG" name="Image75" width="50%" height="400" border="0" id="Image75" /></a><a href="galary1/DSC00999.JPG" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image82','','galary1/DSC00999.JPG',1)"><img src="galary1/DSC00999.JPG" name="Image82" width="50%" height="400" border="0" id="Image82" /></a><a href="galary1/Ethiopia_White_cheeked_Tura.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image84','','galary1/Ethiopia_White_cheeked_Tura.jpg',1)"><img src="galary1/Ethiopia_White_cheeked_Tura.jpg" name="Image84" width="50%" height="400" border="0" id="Image84" /></a><a href="galary1/images (1).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image85','','galary1/images (1).jpg',1)"><img src="galary1/images (1).jpg" name="Image85" width="50%" height="400" border="0" id="Image85" /></a><a href="galary1/images (4).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image86','','galary1/images (4).jpg',1)"><img src="galary1/images (4).jpg" name="Image86" width="50%" height="400" border="0" id="Image86" /></a><a href="galary1/images (5).jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image87','','galary1/images (5).jpg',1)"><img src="galary1/images (5).jpg" name="Image87" width="50%" height="400" border="0" id="Image87" /></a><a href="galary1/TOUR.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image88','','galary1/TOUR.jpg',1)"><img src="galary1/TOUR.jpg" name="Image88" width="50%" height="400" border="0" id="Image88" /></a><a href="galary1/wattled-ibis-ethiopia.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image89','','galary1/wattled-ibis-ethiopia.jpg',1)"><img src="galary1/wattled-ibis-ethiopia.jpg" name="Image89" width="50%" height="400" border="0" id="Image89" /></a><a href="galary1/Stresemanns Bush-crow.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image90','','galary1/Stresemanns Bush-crow.jpg',1)"><img src="galary1/Stresemanns Bush-crow.jpg" name="Image90" width="50%" height="400" border="0" id="Image90" /></a></div></ol></div></a></div></div></div></div>
+
+
+
+
+
+
+
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
+</html>

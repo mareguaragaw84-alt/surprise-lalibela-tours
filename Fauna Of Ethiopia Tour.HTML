@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Fauna of Ethiopia Tour</title>
+<script src="https://static-assets.strikinglycdn.com/i18n-2ace11ac644d0b40fb8b7cb65e9dd1e553022750e0254118dacbe1fe50735e97.js" defer="defer"></script>
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+            function search(query){
+                if(query.slice(0, 7) == "http://"){
+                    window.location.href = query
+                }
+                else{
+                    window.location.href = "https://www.google.com/search?q=" + query
+                }
+            }
+        </script>
+<style>
+body{
+    background-image: url(galary/download\ \(7\).jpg);
+  background-position:cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+header{
+ width:100%;
+ background-color:#000066;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding-left:0px;
+ padding-top:0px;
+ padding-right:0px;
+ margin-top:0px;
+ color:#FFFFFF;
+ font-size:20px;
+ background-size: 100%;
+ background-position:cover ;
+}
+
+ ol{
+ list-style:none;
+ display:flex;
+ column: gap 45px;
+}
+ol li a{
+  color:#FFFFFF;
+  text-decoration:none;
+ }
+ ol li{
+ position:relative;
+ padding:15px;
+ }
+ ol ol{
+ position:absolute;
+ top:20%;
+ background-color:#000066;
+ display:none;
+ width:250px;
+ padding:10px 18px 15px 10px;
+
+}
+ol li:hover> ol{
+   display:block;
+   background-color:#000066;
+  }
+  header a:hover {
+  background-color:#FF9900;
+ }
+ ol ol ol{
+   position:absolute;
+   top:0%;
+   left:150px;
+     
+}
+h1{
+
+color:#0000FF;
+text-align:center;
+padding:0px;
+top:0%;
+background-color: #FFFFFF;
+}
+p{
+text-align:justify;
+margin-left: 200px;
+margin-right: 200px;
+color: white;
+background-color: #343a40;
+}
+
+
+
+  footer {
+        background-color: #343a40; 
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		height:250px;
+    }
+.social-button {
+        margin: 10px 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s; 
+    }
+    .address iframe {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+    
+
+    .social-button:hover {
+        color: #007BFF;      
+	
+}
+.scrollbars-visible {
+    width: 100%;
+    height: 550px;
+    overflow: scroll; 
+}
+
+.search-bar {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: #ff9900;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .search-bar button:hover {
+            background:#0033FF;
+        }
+		.search-bar button img{
+		background:#FFFFFF;
+            border: none;
+            padding: 3px 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+			width:25px;
+			height:22px;
+			}
+		.search-bar button:hover a{
+            background:#0000FF;
+        }
+		h3{
+		background-color:#FFFFFF;
+		color:black;
+		background-position:cover;
+		}
+.element-outline-border {
+    border: 2px solid blue;
+    outline: 2px dashed green;
+}
+    .scrollbars-visibles {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; 
+    }
+     
+    
+    .menu {
+            display: flex;
+            flex-wrap:wrap;
+            padding: 20px;
+        }
+        .menu-item {
+            display:inline-block;
+            width: 400px;
+            margin: 10px;
+            border: 1px ;
+            border-radius: 8px;
+            padding: 10px;
+            text-align:left;
+            margin-left: 200px;
+            background-color: aliceblue;
+        }
+         p {
+            background-color: antiquewhite;
+            color: black;
+        }
+        .menu-item{
+            margin-left:40px;
+            margin-right: 10px;
+        }
+ .menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align:left;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+    p li{
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+    
+}
+dropdown-menus {
+        position:absolute;
+        display:block;
+        
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+ <div class="scrollbars-visible">
+    <div class="img">
+    <img src="photo 1/download (1).jpg "width="100%">
+<h1> Eco-system
+    ConservationUtilization </h1>
+<p>Interpretation is the art of translating the language of nature and the voices of history into stories and experiences that everyone can understand and enjoy.
+The act of making use of resources,
+Utilization is broadly classified in to consumptive and non consumptive ,
+The distinction b/n the two classification is based on the fate of wildlife,
+Consumptive utilization, 
+Physically taking fauna and flora dead or alive from its natural habitat (hunting & live trade) ,
+Non consumptive utilization ,
+This is the utilization through the tourism industry where resources are neither physically removed nor constrained (game viewing, photo safari),
+Interpretation  is the art of translating the language of nature and the voices of history into stories and experiences that everyone can understand.</p>
+<section id="menu">
+    <h1 style="text-align: center;">wild animals</h1>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="gallery 3/qqq.PNG" alt="baboon">
+            <h3>baboon</h3>
+            <p><ul><li>Baboon with red sexual skin on the chest </li>
+                <li>Endemic  for Ethiopia</li>
+                <li>Confined in the Semien,  Tarmaber & D/libanose </li>
+                <li>Habitat: Highland grasslands bordering cliff</li>
+                <li>They are herbivores feeding different plants & agricultural crops</li>
+                <li>They live in a form of a troop and are polygamous in their reproduction</li></ul></p>
+            
+        </div>
+       
+        <div class="menu-item">
+            <img src="gallery 3/monky.PNG" longdesc="gallery 3/monky.PNG"  alt="Anubis baboon">
+            <h3>Anubis baboon</h3>
+            <p><ul><li>Distribution: Wide spread distribution common </li>
+                <li>Habitat: Live in a variety of habitats </li>
+                <li>Range from the valley bottom, at an altitude of 1700 m to the plateau to an altitude of 2300 m 
+                Seek sleeping refuges in trees or on rocky cliffs, depending on availability
+                Open cliffs,free of extensive woody vegetation and with near-vertical slopes are preferred as nighttime sleeping spots</li>
+                <li>Activity pattern: Diurnal</li>
+                <li>Feeding: Omnivores</li>
+                <li>Social organization: Troop</li>
+                <li>Reproduction: Successful breeder and polygamous</li></ul></p>
+            
+        </div>
+       
+        <div class="menu-item">
+            <center><h1>Terms related to  fauna & flora</h1></center>
+            <img src="gallery 3/larvatus.PNG" longdesc="gallery 3/larvatus.PNG" alt="Bushpig(Potamochoerus">
+            <h3>Bushpig(Potamochoerus</h3>
+            <p><ul><li>Common in Ethiopia
+                Live from sea-level to montane forest (up to 4,000 m), gallery forest, swampland, <br />woodland, and mixed scrub</li>
+                <li>They are omnivores feeders</li> 
+                <li>They live up to 12 animals in a group </li>
+                <li>Reproduction: Polygamous</li>
+                <li>Males play an active role in the rearing & defense of the young.</li></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/srt.PNG" alt="Hamadryas baboon (Papio hamadryas)">
+            <h3>Hamadryas baboon (Papio hamadryas)</h3>
+            <p><ul><li>Distribution: East Ethiopia</li>
+                <li>Habitat: Lives in semi-desert areas, savannas and rocky areas, requiring cliffs </li>
+                <li>Activity pattern: Diurnal</li>
+                <li>Feeding habit: omnivorous. Feeds plants, insects, reptiles and small mammals</li>
+                <li>Social organization: Has an unusual four-level social system.</li>
+                <li>Social interaction occurs between one male and up to ten females.</li>
+                <li>Reproduction: Polygamou</li></ul></p>
+            
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/mou.PNG" alt="Warthog">
+            <h3>Warthog</h3>
+            <p><ul><li>Africas most frequently observed pig common in semi- arid areas of Ethiopia. </li>
+                <li>It is common & abundant in open grass &woodland savannahs from sea level to 3000 m high rain fall areas. </li>
+                <li>Predominantly they are diurnal but sometimes they feed at night.</li>
+                <li>They are omnivores feeders</li>
+                <li>They live in a family party</li>
+                <li>They are polygamous</li></ul></p>
+            
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/moad.PNG" alt="Giant Forest hog">
+            <h3>Giant Forest hog</h3>
+            <p><ul><li>The largest of all the pigs 
+                Rarest pig occurs in Uganda, Congo, Tanzania & Ethiopia.</li> 
+                <li>It occurs in a wide range forest at vicinity of water from sea level to up to 3800 m.</li>
+                 <li>It is grazer.</li> 
+                <li>They are shy and largely nocturnal some times graze in cooler period of the day. </li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/giraf.PNG" alt="MASSAI Giraffe">
+            <h3>MASSAI Giraffe</h3>
+            <p><ul><li>Massai & Reticulated giraffe are present in the south and western half of Ethiopia.</li> 
+                <li>Population in Ethiopia is extremely fragmented due to hunting & habitat loss .</li>
+                <li>They live in savannah woodland areas </li>
+                <li>They are browsers & feed succulent part of vegetation by extending their necks and 45 cm long tongue.</li>  
+                <li>Live in group without establishing territory and with an extended home range. Loosely connected.</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/comm.PNG" alt="MASSAI Giraffe">
+            <h3>MASSAI Giraffe</h3>
+            <p><ul><li>Key stone species in Africas water.</li> 
+                <li>Lives in Fresh H<sub>2</sub>O with T0 between 18- 350c .</li><li> Water slow moving & shallow
+                Spend 18 hours in water and 6 hours on land.</li>
+                <li>Herbivores animal that consume 60 kg of food per day.</li> 
+                <li>Their body produces reddish pink mucous to protect the skin from the effects of water and too much drying on land. </li>
+                <li>They live in groups of 10 to 15 individuals. </li>
+                <li>Reproduction polygamous.</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/niyalla.PNG" alt="Mountain Nyala">
+            <h3>Mountain Nyala</h3>
+            <p><ul><li>Endemic antelope for Ethiopia.</li>
+                <li>The white mark on the neck and behind the nose is a pointer for its identity</li> 
+                <li>Huge difference in the size between male and female.</li> 
+                <li>Horn in females is absent</li>
+                <li>Found in Bale and Arsi high lands.</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/wali.PNG" alt="Walia ibex">
+            <h3>Walia ibex</h3>
+            <p><ul><li>Endemic for Ethiopia</li>
+                <li>Found  in Simien Mountains National Park.</li>
+                <li>Lives in Afro-alpine meadow</li>
+                <li>Active early morning and late afternoon</li>
+                <li>They are grazers and browsers </li>
+                <li>Critically endangered</li>
+                <li>However chances are high to see it grazing in the Afro-alpine meadows.</li>
+                <li>Live in a group</li>
+                <li>Males form bachelor party</li>
+                <li>Females & their young say together </li>
+                <li>Reproduction polygamous</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/menil.PNG" alt="Menilik bushbuck">
+            <h3>Menilik bushbuck</h3>
+            <p><ul><li>Horned,  white spots below the eye on the neck white stripe on the back is pointer to identity</li>
+                <li>Endemic for Ethiopia</li> 
+                <li>Prefer to stay in high land forest</li>
+                <li>Browser </li>
+                <li>Crepuscular active  early in the morning and late hours of the day</li>
+                <li>Social animal live in a form of a herd</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/swayne.PNG" alt="Swayne's hartebeest(Alcelaphus buselaphus swaynei)">
+            <h3>Swayne's hartebeest(Alcelaphus buselaphus swaynei)</h3>
+            <p><ul><li>Has long legs, short neck, long, narrow face and long, pointed ears</li>
+                <li>Both the male and female have horns</li> 
+                <li>It is an endangered antelopenative to Ethiopia.</li> 
+                <li>Two of the remaining populations are located in Senkelleand maze NP</li>
+                <li>The hartebeest feeds on grasses.</li> 
+                <li>They are gregarious animals feeding in groups of around 20.</li> 
+                <li>Adult males areterritorial & mark out an area with dung</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/great.PNG" alt="Greater kudu (Tragelaphus strepsiceros)">
+            <h3>Greater kudu (Tragelaphus strepsiceros)</h3>
+            <p><ul><li>The white mark on the back of the nose  & white stripe running from the back to abdomen.</li><li> the spiral horns are identity pointers </li>
+                <li>The bulls also have large manesrunning along theirthroat,</li> 
+                <li>Preferred habitat mixed scrub woodland bush acacia, and mopane bush on lowlands, hills, and mountains. </li>
+                <li>They are browsers  & can exist for long periods without drinking, </li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/grea.PNG" alt="Greater Kudu">
+            <h3>Greater Kudu</h3>
+            <p><ul><li>Bulls tend to be much larger than the cows,</li> 
+                <li>Horn is absent in females </li>
+                <li>They are social animals females forming a group lager than males </li>
+                <li>Few individuals of male form a bachelor group</li>
+                <li>They may be active throughout the 24-hour </li>
+                <li>Greater kudu are not territorial;</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/bufalo.PNG" alt="African Buffalo (syncerus caffar)">
+            <h3>African Buffalo (syncerus caffar)</h3>
+            <p><ul><li>African buffalo can be seen in quite a few of the national parks,</li> 
+                <li>It is most common in Gambella National Park.</li>
+                <li>Very few found in Omo & Mago NP & also Dati wolel in Welega</li>
+                <li>They are herbivores grazing & browsing animals</li>
+                <li>Live in a family grouping, herd & troop</li>
+                <li>Reproduction polygamous</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/bisa.PNG" alt="Beisa oryx">
+            <h3>Beisa oryx</h3>
+            <p><ul><li>Formerly large population in Awash national park</li>
+                <li>Currently small population present in Awash national park,</li>
+                <li>Oryx is a very draught hardy species, that even occurs in extreme deserts like the Danakil Depression.</li>
+                <li>>Occurs in grassland plains</li>
+                <li>Active early & late hours of the day</li>
+                <li>Social animal living in groups family & herd</li>
+                <li>Endangered </li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/abc.PNG" alt="White eared kob">
+            <h3>White eared kob</h3>
+            <p><ul><li>Black bodied white faced & necked antelope</li>
+                <li>The ear is distinctly white</li>
+                <li>Its most eastern range isGambella national park</li>
+                <li>Occupy savanna grass land</li>
+                <li>Social animal living in a form of a family, herd & troops</li>
+                <li>The second most common migratory mammal in Africa. </li>
+                <li>Migrates in to the south Sudan & Northern part of Uganda</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/lesser.PNG" alt="Lesser kudu(Tragelaphus imberbis)">
+            <h3>Lesser kudu(Tragelaphus imberbis)</h3>
+            <p>I<ul><li>Spiral-horned antelope.</li> 
+                <li>One long white stripe on the back, with 1114 white stripes branching towards the sides.[ Horns are present only on males</li>
+                <li>Inhibits Acacia-commiphora dense woodland hilly areas </li> 
+                <li>Browser</li>
+                <li>Crepuscular</li> 
+                <li>Gregarious in nature. No distinct leader or any hierarchy is noted</li>
+                <li>Polygamous</li>
+                <li>Found in Awash, Somali, rift valley & south Ethiopia</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/grenuk.PNG" alt="Gerenuk (Litocranius walleri) Female">
+            <h3>Gerenuk (Litocranius walleri) Female</h3>
+            <p><ul><li>Herds typically comprise members of a single sex, though female herds additionally have juveniles. </li>
+                <li>Some males lead a solitary life.</li>
+                <li>Reproduction Polygamous</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/ass.PNG" alt="Wild ass">
+            <h3>Wild ass</h3>
+            <p><li>Found only in open desert country</li>
+                <li>Yanguderasa national pzrk With only about 100 individuals left in the wild. </li>
+               <li>Lives in a very dry environment</li>
+               <li>Shy and rare</li>
+               <li>It is one of the most threatened large mammal in the world.</li> 
+               <li>Active by dusk, by night & early mornning & late afternoon</li>
+               <li>Social animal male group and female with a young group.</li></ul></p>
+        </div>
+	
+        <div class="menu-item">
+            <img src="gallery 3/zebra.PNG" alt="Burchell's zebra(Equus quagga burchellii)">
+            <h3>Burchell's zebra(Equus quagga burchellii)</h3>
+            <p><ul><li>Known as plain zebra.</li> 
+                <li>It is threatened by human activities hunting for its meat and hide</li>
+                <li>They are grazers</li> 
+                <li>They are highly water-dependent.</li>
+                <li>Plains zebras generally live in treeless grasslands and savanna</li>
+                <li>Found south Ethiopia & Gambella national park</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/ac.PNG" alt="Burchell's zebra(Equus quagga burchellii)">
+            <h3>Burchell's zebra(Equus quagga burchellii)</h3>
+            <p><ul><li>They  are social animals, forming harems with a single stallion, </li>
+                <li>Harem small family group</li>
+                <li>Multiple harems come together to form herds</li>
+                <li>Watch for predators rather than attempting to hide;</li> 
+                <li>The harem stallion attacks predators to defend his harem</li>
+                <li>The stallion mates with all his mares. Mares may give birth to one foal every twelve months.</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/africa.PNG" alt="African Elephant">
+            <h3>African Elephant</h3>
+            <p>I<ul><li>Largest living land mammal</li>
+                <li>Nose lengthened to form a trunk</li>
+                <li>Small eye & large ears 1.5 m long & 1.2 m width</li>
+                <li>Upper incisor converted to tusks</li>
+                <li>Occupy different types of habitat</li>
+                <li>Dine on a wealth of plants</li>
+                <li>They are social animals</li>
+                <li>They live in family grouping, </li></ul><</p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/tig.PNG" alt="African Leopard">
+            <h3>African Leopard</h3>
+            <p>I<ul><li>Solitary hunter</li>
+                <li>Kills the prey by crushing the skull</li>
+                <li>Efficient predator</li>
+                <li>Also feed from the garbage pits of human</li>
+                <li>It spends much of its time in trees as it stalks prey and even as it eats. </li>
+                <li>Reproduction polygamous</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/red fo.PNG" alt="Ethiopian wolf(Canis simensis)">
+            <h3>Ethiopian wolf(Canis simensis)</h3>
+            <p><ul><li>Flagship species for conservation in Ethiopia </li>
+                <li>Well visible in Simien and Bale National Parks.</li>
+                <li>Other areas Mennze Guasa and Abune yoseph </li>
+                <li>The Ethiopian wolf is the only wolf species found in Africa</li>
+                <li>Threatened</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/jackl.PNG" alt="Black-backed jackal(Canis mesomelas)">
+            <h3>Black-backed jackal(Canis mesomelas)</h3>
+            <p><ul><li>Lives in a variety of habitats, ranging from arid coastal desert to woodland savannah.</li> 
+                <li>It is an opportunistic scavenger and predator</li> 
+                <li>Nocturnal night active animal,</li> 
+                <li>The social structure of black-backed jackal society usually consists of amonogamous male and female pair, their offspring, </li>
+                <li>Some times helpers from previous litter stay together</li>
+                <li>The pair has a strong bond and can stay together for eight years or more</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/af.PNG" alt="African wild dog (Lycaon pictus)">
+            <h3>African wild dog (Lycaon pictus)</h3>
+            <p><ul><li>African hunting dog, or African painted dog</li>
+                <li>It is listed asendangeredby IUCN,</li> 
+                <li>Current population has been estimated at roughly 39 subpopulations containing 6,600 adults, only 1,400 of which are fully grown.</li> 
+                <li>Social animal living in packs with separate dominance hierarchies for males and females. Uniquely among social</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/a.PNG" alt="Wild dog (L. pictus)">
+            <h3>Wild dog (L. pictus)</h3>
+            <p><ul><li>Bulkiest and most solidly built of African canidae</li>
+                <li>Rare in Ethiopia, Occurs in Omo & Mago national park Gambella national park,</li> 
+                <li>Occasionally occurs inBale mountains national park, Sporadically sighted in Awash Nechsar & Yabello has very strong social bonds,</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/keb.PNG" alt="Aardvark">
+            <h3>Aardvark</h3>
+            <p><ul><li>Order Tubulidentata consists of a single species, the aardvark. </li>
+                <li>Tubulidentata are characterized by their teeth which lack a pulp cavity and form thin tubes which are continuously worn down and replaced .</li></ul></td><td><img src="gallery 3/rat.PNG" /></td><td><font color="white"><u>Bat eared fox</u></font><ul><li>Fox like animal muzzle</li>
+                <li>pointed, Ear very large tail very bushy</li>
+                <li>Commonly occurs in short grasslands & arid regions</li>
+                <li>Predominantly an insectivore</li>
+                <li>Social monogamus animals hunt in groups, mostly in pairs and groups of 3 to 15</li>
+                <li>Male take majority of parental care</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/wer.PNG" alt="Serval cat(Leptailurus serval)">
+            <h3>Serval cat(Leptailurus serval)</h3>
+            <p><ul><li>Small head, large ears, </li>
+                <li>Spotted and striped with black, and a short, black-tipped tail. </li>
+                <li>Prefers areas with cover such as reeds and tall grasses and proximity to water bodies</li>
+                <li>Active in the day as well as at night, </li>
+                <li>Omnivores feeder</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="gallery 3/asr.PNG" alt="Serval cat(Leptailurus serval)">
+            <h3>Serval cat(Leptailurus serval)</h3>
+            <p><ul><li>They  prey on rodents small birds, frogs, insects and reptiles, and are also known to consume grasses</li>
+                <li>It is solitary with minimal social interaction</li>
+                <li>Reproduction Polygamous</li></ul></p>
+        </div>
+        <div class="menu-item">
+            <img src="photo 1/download (9).jpg" alt="Lion">
+            <h3>Lion</h3>
+            <p><ul><li>The lion is a wild terrestrial animal called the king of the forest. </li>
+                <li>The lion is a strong animal with a strong body, a big head, a majestic mane, and two fierce eyes. </li>
+                <li>Lions are predatory animals and eat only after hunting. </li>
+                <li>They have strong claws and sharp teeth, which help them hunt their prey and eat the flesh.</li></ul></p>
+            </div>
+        <!-- Add more menu items as needed -->
+    </div>
+<h1>wild animal</h1>
+</section>
+</div>
+
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer>
+    <h4>Contact us</h4>
+      <div class="social-buttons">
+          <button class="social-button"><i class="fab fa-facebook-f"></i></button>
+          <button class="social-button"><i class="fab fa-twitter"></i></button>
+          <button class="social-button"><i class="fab fa-instagram"></i></button>
+          <button class="social-button"><i class="fab fa-linkedin-in"></i></button>
+          <button class="social-button"><i class="fab fa-google"></i></button>
+          <button class="social-button"><i class="fab fa-telegram"></i></button>
+          
+          
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31217.775835120658!2d39.02564894454956!3d12.02823341906729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413ef09506c7fb%3A0x704aabe1eb572aa9!2z4Ymk4YmwIOGMiuGLruGIreGMiuGItQ!5e0!3m2!1sam!2set!4v1737018793950!5m2!1sam!2set" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <center>&copy; 2016 Your Surprise Lalibela Tour. All rights reserved.</center>
+  </footer>
+</html>

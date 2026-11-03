@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>bird watching</title>
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+            function search(query){
+                if(query.slice(0, 7) == "http://"){
+                    window.location.href = query
+                }
+                else{
+                    window.location.href = "https://www.google.com/search?q=" + query
+                }
+            }
+        </script>
+<style>
+body{
+  background-image: url(nature.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
+  padding:0px 10px 10px 3px;
+}
+header{
+ width:100%;
+ background-color:#000066;
+ display:flex;
+ justify-content:space-between;
+align-items:center;
+ padding-left:0px;
+ padding-top:0px;
+ padding-right:0px;
+ margin-top:auto;
+ color:#FFFFFF;
+ font-size:20px;
+}
+
+ ol{
+ list-style:none;
+ display:flex;
+ column: gap 45px;
+}
+ol li a{
+  color:#FFFFFF;
+  text-decoration:none;
+ }
+ ol li{
+ position:relative;
+ padding:15px;
+ }
+ ol ol{
+ position:absolute;
+ top:20%;
+ background-color:#000066;
+ display:none;
+ width:250px;
+ padding:10px 18px 15px 10px;
+
+}
+ol li:hover> ol{
+   display:block;
+   background-color:#000066;
+  }
+  header a:hover {
+  background-color:#FF9900;
+ }
+ ol ol ol{
+   position:absolute;
+   top:0%;
+   left:150px;
+     
+}
+h1{
+
+color:#0000FF;
+text-align:center;
+padding:0px;
+top:0%;
+
+}
+p{
+text-align:justify;
+margin-left: 200px;
+margin-right: 200px;
+color: black;
+background-color: white;
+font-size: 20px;
+}
+
+.img{
+width:50%;
+height:25%;
+text-align:center;
+top:10%;
+display:block;
+margin: 10px 300px ;
+color:#0066FF;
+}
+  footer {
+        background-color: #343a40; 
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		height:250px;
+    }
+.social-button {
+        margin: 10px 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s; 
+    }
+    .address iframe {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+    
+
+    .social-button:hover {
+        color: #007BFF;      
+	
+}
+.scrollbars-visible {
+    width: 100%;
+    height: 550px;
+    overflow: scroll; 
+}
+
+.search-bar {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: #ff9900;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .search-bar button:hover {
+            background:#0033FF;
+        }
+		.search-bar button img{
+		background:#FFFFFF;
+            border: none;
+            padding: 3px 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+			width:25px;
+			height:22px;
+			}
+		.search-bar button:hover a{
+            background:#0000FF;
+        }
+		h3{
+		background-color:#FFFFFF;
+		color:black;
+		background-position:cover;
+		}
+.element-outline-border {
+    border: 2px solid blue;
+    outline: 2px dashed green;
+}
+    .scrollbars-visibles {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; 
+    }
+    .top-right {
+  position:relative;
+  top: 30%;
+  
+}
+.menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align:left;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    
+}
+dropdown-menus {
+        position:absolute;
+        display:block;
+        
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+     <div class="scrollbars-visible">
+        <div class="container">
+            <img src="galary/turacobird.webp" alt="Snow" style="width:100%"height="600px">
+            <div class="top-right">watching bird is the found in only Ethiopia</div>
+     
+<center><h1><u><font color="#7F00FF">Bird watching</font></u></h1> </center>
+<p>Habitat. The Knysna Turaco inhabits Afromontane forest and is considered an indicator species for this forest type. It is found at lower altitudes in the south of its range where it occurs down to sea-level from the Western and Eastern Cape to southern KwaZulu Natal.The bird is believed to have supernatural powers in some African cultures, with some people associating the bird with luck, wealth, and fertility. Some cultures also believe that the bird has the ability to communicate with the spirits of the deceased, and is therefore often associated with death and the afterlife.</p>
+<center><img src="photo 1/download (7).jpg" width="30%"/></center>
+<p> In modern sense birds can be used to provide early warning of environmental problems. Tout of the total 926 checklists, 24 endemic bird of Ethiopia explores the current status and distribution with a brief description and information on habitat, distribution, habits and breeding. Furthermore, threats and IUCN category are covered. Moreover, a complete list of all known localities is added for each species. Ornithologists and conservation biologists need to develop plans using an interdisciplinary approach on the quality, beautiful landscapes and iconic species to ensure conservation activities address the diversity of biological and socioeconomic issues that face on 3E birds of Ethiopia. </p>
+<center><img src="gallery 3/gugut.PNG" width="30%" /><p>In reality, conservation issues are complex and highly context-specific and this catalogue helps conservationst to impasses on endemic birds of Ethiopia. Research has shown that species richness in overall biodiversity as vital for the health and functioning of ecosystems, which provide services such as crop pollination; flood prevention, carbon storage, fisheries, tourism, increased soil, air and water quality upon which Ethiopia economy depends.</p></p><img src="galary/blak winged lovebird.jpg" width="30%" /></center><br><p> Lalibela is known as the historical wonder of the world in addition to this more than 200 bird lists from this 6 are endemic to Ethiopia next to rock lay out church of Lalibela we organized bird list and endemic watch tour round.</p>&nbsp;<center><img src="galary/Ethiopia_White_cheeked_Tura.jpg" width="30%" /><p>Bale M ountains National Park is recognized as one of the m ost im portant bird areas in the county. This paper provides an updated ch eck list of and im portant collated inform ation on birds of the National Park. Twenty Orders and 5 8 Fam ilies of birds are known to occur in BMNP. One order, Order Passeriform es, con tains the highest num ber of fam ilies and species, with 2 4 (41.38%) fam ilies and 117 (41.49 %) species of the total. While, twelve orders are only represented by a single family. At family level, family Accipitridae (belonging to Order Accipitriformes) p o ssesses the highest num ber of species; 3 8 (13.48%) species of the total. </p><img src="galary/images (1).jpg" width="30%" /><p>he Ethiopian Bush-crow Zavattariornis stresemanni is a charismatic and Endangered endemic bird of southern Ethiopia, whose general biology remains under-studied. We present field notes and observations from 2008 to 2014, covering many aspects of the species' behaviour and morphology. Bush-crows breed cooperatively in response to both of the local rainy seasons, but group size and fidelity of helpers appears to be variable. Bush-crow nests were found for the first time on man-made structures; a low power distribution pole and a tall electricity pylon. The display of one bush-crow to another is further described. Juveniles can be identified by darker coloration around the face, bright red gapes and distinctive begging calls. Adults possess lightweight</p><img src="galary/Stresemanns Bush-crow.jpg" width="30%" /><p>Birds are important natural field components, and critical to most ecosystems by supporting seeds dispersal, plant pollination and pest control amongst other functions. Data on avian diversity and feeding behavior could be used to enhance habitats and help initiate conservation strategies. Thus, to characterize the diet of local avian fauna, we selected four semi-refuge sites around Kano metropolis, where we established 22 line transects, each 900m long, spaced 150m apart. During May to October, 2017 each site was visited once a month, adding up to 132 transect-visits. Daily surveillance starts between the local hours of 6:30am to 10:30am.</p><img src="galary/images.jpg"width="30%" /></center><br />
+<center><h1><u><font color="white">Ethiopia Mountain and birds</font></u></h1></center> <p>Waking to a crystal clear blue sky, you sit atop a rocky outcrop, the early morning rays warming your back as your eyes scan the wide expanse of alpine splendor in front of you. Through the crisp morning air your gaze in suspended as a flash of movement catches your eye. Ethiopia is country full of breath-taking mountains a lot of trekking site with birding.<br />
+<center><img src="gallery 3/wef.PNG" /></center><br />
+<p>Ethiopia is a welcoming country, and its culture has a beguiling mix of Africa and Arabian influence. Birding trips should make time for cultural activates the history of the region and the Ethiopia orthodox church and monasteries of the north are fascinating, while the animist tribes of the southwest look intriguingly toward equatorial Africa.<br />
+<center><img src="../www/Gallery/4a07d75304dbe4461dff6d4c3aa227beebb90ea47d6d844d4ee0fecf1241efe9.jpg" WIDTH="30%"/></center><br />
+<p>Ethiopia has more than 860 bird species including up to endemics and near-endemics. It is also a relatively safe place to see many bird species that are hard to see anywhere else owing to the difficulty of access to neighboring countries. Birding trips will be enhanced by Gelada baboons and Ethiopian Wolves.</p></p></p></p></p></p>
+</font></div></div>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
+
+</body>
+<footer>
+  <h4>Contact us</h4>
+    <div class="social-buttons">
+        <button class="social-button"><i class="fab fa-facebook-f"></i></button>
+        <button class="social-button"><i class="fab fa-twitter"></i></button>
+        <button class="social-button"><i class="fab fa-instagram"></i></button>
+        <button class="social-button"><i class="fab fa-linkedin-in"></i></button>
+		<button class="social-button"><i class="fab fa-google"></i></button>
+		<button class="social-button"><i class="fab fa-telegram"></i></button>
+		
+		
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31217.775835120658!2d39.02564894454956!3d12.02823341906729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413ef09506c7fb%3A0x704aabe1eb572aa9!2z4Ymk4YmwIOGMiuGLruGIreGMiuGItQ!5e0!3m2!1sam!2set!4v1737018793950!5m2!1sam!2set" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <center>&copy; 2016 Your Surprise Lalibela Tour. All rights reserved.</center>
+</footer>
+</html>

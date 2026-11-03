@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+            function search(query){
+                if(query.slice(0, 7) == "http://"){
+                    window.location.href = query
+                }
+                else{
+                    window.location.href = "https://www.google.com/search?q=" + query
+                }
+            }
+        </script>
+        
+<style>
+body{
+  background-image: url(plant.webp);
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+header{
+ width:100%;
+ background-color:#000066;
+ display:flex;
+ justify-content:space-between;
+align-items:center;
+ padding-left:0px;
+ padding-top:0px;
+ padding-right:0px;
+ color:#FFFFFF;
+ font-size:20px;
+}
+
+ ol{
+ list-style:none;
+ display:flex;
+ column: gap 45px;
+}
+ol li a{
+  color:#FFFFFF;
+  text-decoration:none;
+ }
+ ol li{
+ position:relative;
+ padding:15px;
+ }
+ ol ol{
+ position:absolute;
+ top:20%;
+ background-color:#000066;
+ display:none;
+ width:250px;
+ padding:10px 18px 15px 10px;
+
+}
+ol li:hover> ol{
+   display:block;
+   background-color:#000066;
+  }
+  header a:hover {
+  background-color:#FF9900;
+ }
+ ol ol ol{
+   position:absolute;
+   top:0%;
+   left:150px;
+     
+}
+h1{
+    background-color: #FFFFFF;
+    background-size:cover;
+}
+
+
+p{
+text-align:justify;
+margin-left: 200px;
+margin-right: 200px;
+color: black;
+background-color: hsl(208, 100%, 97%);
+font-size: 20px;
+}
+
+.img{
+width:100%;
+height:50%;
+text-align:center;
+top:10px;
+display:block;
+
+color:#0066FF;
+background-color: #FFFFFF;
+}
+  footer {
+        background-color: #343a40; 
+        color: white;
+        text-align: center;
+        padding: 2ch;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+		height:250px;
+    }
+.social-button {
+        margin: 10px 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s; 
+    }
+    .address iframe {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+    
+
+    .social-button:hover {
+        color: #007BFF;      
+	
+}
+.scrollbars-visible {
+    width: 100%;
+    height: 550px;
+    overflow: scroll; 
+}
+
+.search-bar {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            background: #ff9900;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .search-bar button:hover {
+            background:#0033FF;
+        }
+		.search-bar button img{
+		background:#FFFFFF;
+            border: none;
+            padding: 3px 3px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+			width:25px;
+			height:22px;
+			}
+		.search-bar button:hover a{
+            background:#0000FF;
+        }
+		h3{
+		background-color:#FFFFFF;
+		color:black;
+		background-position:cover;
+		}
+
+    .scrollbars-visibles {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; 
+    }
+    .menu-toggle {
+    display:none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+/* Courses Grid */
+.Tour pakage {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tour pakage {
+    background: #007bff;
+    padding: 20px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Lalibela Tour{
+background: #007bff;
+    padding: 10px;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Do You Know{
+    background: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ?? Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 70%;
+        text-align:left;
+        position:absolute;
+        
+        
+		
+    }
+
+    .nav-links.active {
+        display: flex;
+		
+	
+    }
+
+    .menu-toggle {
+        display:block;
+        text-align:left;
+        margin-right: 0%;
+        margin-left:0% ;
+    }
+
+    /* Dropdown Menu for Mobile */
+    .dropdown-menu {
+        position: relative;
+        display:none;
+        width:90%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+    }
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    
+}
+dropdown-menus {
+        position:absolute;
+        display:block;
+        
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+<nav class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+<ol class="nav-links">
+    <img src="Capture1.PNG" width="100px"height="100px" />
+<li><a href="Home 1.html">Home</a></li>
+<li><a href="about us.html">About us</a></li>
+ <li class="dropdown">
+ <li><a href="#">Tour pakage</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+ <ol class="dropdown-menu">
+ <li><a href="Festival and Ceremony Tour.html">Festival and cermony Tour</a></li>
+ <li><a href="Photography Tour.html">Photography Tour</a></li>
+ <li> <a href="Fauna Of Ethiopia Tour.HTML">Fauna of Ethiopia Tour</a></li>
+ <li><a href="Flora Of Ethiopia.html">Floara of Ethiopia</a></li>
+ <li class="dropdown">
+ <li><a href="#">Lalibela Tour</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+ <div class="scrollbars-visibles">
+ <li><a href="Bet mariam.html">Bet mariam</a></li>
+ <li><a href="Bet Medhaniealem.html">Bet medhanieyalem</a></li>
+ <li><a href="Bet Golegota.html">Bet golegota</a></li>
+ <li><a href="Bete Gebriel.html">Bet gebrial</a></li>
+ <li><a href="Bet Mekeriose.html">Bet merkerios</a></li>
+ <li><a href="Biete Amanuel.html">Bet amanuel</a></li>
+ <li><a href="Bet abalibanos.html">Bet abba libanos</a></li>
+ <li><a href="Bet geyorgis.html">Bet geyorgis</a></li>
+ <li><a href="Bet Meskel.html">Bet meskel</a></li></div></li></ol>
+ <li><a href="Bird Watching Tours.html">Bird Watching Tour</a></li></ol>
+ <li class="dropdown">
+ <li><a href="#">Do You Know</a> &nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+<ol class="dropdown-menu">
+    <div class="scrollbars-visible">
+  <li><a href="Janury.html">Janury</a></li>
+  <li><a href="feburary.html">Feburary</a></li>
+  <li><a href="march.html">march</a></li>
+  <li> <a href="Aprile.html">Aprile</a></li>
+  <li> <a href="May.html">May</a></li>
+  <li> <a href="June.html">June</a></li>
+  <li> <a  href="July.html">July</a></li>
+  <li> <a href="Augest-1.html">Augest-1</a></li>
+  <li> <a href="September.html">September</a></li>
+  <li> <a   href="Octover.html">Octover</a></li>
+  <li><a href="November.html">November</a></li>
+  <li> <a href="December.html">December</a></li></div>
+  </li>
+  
+ </ol>
+<li><a href="contacts2.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="Email login.html">Reservation</a></li>
+ </ol>
+ <ol class="dropdown-menus">
+ <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="search" id="search" name="q" placeholder="Search any things" />
+		  <button type="submit"><img src="photo 1/search.png" /></button>
+		   </form>	
+		   </div></ol></ol></nav>
+ 
+     </header>
+
+ <div class="scrollbars-visible">
+    <img src="photo 1/koso.jpg"width="100%">
+    <hr>
+    <div class="img">
+<h1><center>flora of Ethiopia</center></h1>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The flora of Ethiopia is very diverse with an estimated number 7,000 species of higher plants, About 15 % or more are endemic Ethiopia is considered as the fifth largest floral country in tropical Africa About 300 tree species represent the floral diversity The horn of Africa (Ethiopia, Eritrea, Djibouti and Somalia) harboring more than 8000 plant species, About 24 %endemic to the region (Friis et al., 2003).
+    <center> <img src="photo 1/jebera.jpg.crdownload"width="30%"></center></p>
+</p>
+<h1><center>Afro alpine vegetation</center></h1>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These can be further sub-divided into ten broad ecosystems:
+Afro-alpine and sub-alpine
+Dry evergreen montane forest and grassland
+Moist evergreen montane forest
+Moist evergreen lowland forest
+Congo-Guinean forest
+Acacia woodland and thickets
+Acacia-Commiphora woodland
+Combretum-Terminalia woodland/savannah
+Lakes, wetlands & river systems
+Arid ecosystems
+Alpine vegetationisfound Above the tree line on mountains above 2,500 metre.
+
+Alpine lakes rich in high land biomes Hosts 5 large endemic mammals & 1 burrowing E rodent Dominated by grass and Helichrysum splendidum.</p>
+<center><img src="gallery 3/afro.PNG" longdesc="gallery 3/afro.PNG" /></center><br />
+<center><h1>Desert & semi- desert scrub land</h1>
+<img src="galary/download (16).jpg" longdesc="gallery 3/deser.PNG" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="galary/download (17).jpg" longdesc="gallery 3/desert.PNG" /><br />
+<img src="galary/download (18).jpg" longdesc="gallery 3/endu.PNG" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="galary/download (19).jpg" longdesc="gallery 3/eupho.PNG" /><br /><h1>Euphorbia tirucalli&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Euphrbia trigone</h1><br />
+<img src="galary/images (13).jpg" longdesc="gallery 3/culsia.PNG" />  <img src="galary/images (2).jfif" longdesc="gallery 3/cullci.PNG" /><br /> 
+<h1>Calisia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alo ellenbickii</h1><br />
+<img src="galary/images (6).jpg" />   <img src="galary/images (8).jpg" longdesc="gallery 3/baresso.PNG" /><br />
+<h1>Borassus aethiopicum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phoeiex reclinata</h1><br />
+<img src="galary/images (7).jpg" /><br />
+<h1>Echinops ellenbeckii (Asteraceae)</h1><br />
+<img src="gallery 3/hyper.PNG" longdesc="gallery 3/hyper.PNG" /><br />
+<h1>Hypericum gnidiifolium </h1><br />
+<img src="gallery 3/hel.PNG" longdesc="gallery 3/hel.PNG" /><br />
+<h1>Helichrysum horridum (Asteraceae)</h1> <br />
+<img  src="galary/images (12).jpg" /><br />
+<h1>Echinops longisetus</h1> <br />
+<img src="gallery 3/kin.PNG" longdesc="gallery 3/kin.PNG" /><br />
+<h1>Kinphophia species</h1><br />
+<img src="gallery 3/kinpho.PNG" longdesc="gallery 3/kinpho.PNG" /><br />
+Kinphofia coper<br /><br />
+<br /><img src="gallery 3/hyt.PNG" longdesc="gallery 3/hyt.PNG" /></center><br />
+<h1>Helichrysum splendidum</h1>
+<h1>Protected areas of Ethiopia</h1>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An area of land or sea especially dedicated to the protection and maintenance of biological diversity and of natural and or associated cultural resources and managed through legal and other effective means.  
+Major management purpose includes:
+Scientific research
+Protecting wilderness
+Preserving species and genetic diversity
+Maintain eco-system services
+Protecting specific cultural and natural features
+Tourism and recreational
+Education and 
+Sustainable use of the resources from natural eco-systems.
+</center></font>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
+</body>
+<footer>
+    <h4>Contact us</h4>
+      <div class="social-buttons">
+          <button class="social-button"><i class="fab fa-facebook-f"></i></button>
+          <button class="social-button"><i class="fab fa-twitter"></i></button>
+          <button class="social-button"><i class="fab fa-instagram"></i></button>
+          <button class="social-button"><i class="fab fa-linkedin-in"></i></button>
+          <button class="social-button"><i class="fab fa-google"></i></button>
+          <button class="social-button"><i class="fab fa-telegram"></i></button>
+          
+          
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31217.775835120658!2d39.02564894454956!3d12.02823341906729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413ef09506c7fb%3A0x704aabe1eb572aa9!2z4Ymk4YmwIOGMiuGLruGIreGMiuGItQ!5e0!3m2!1sam!2set!4v1737018793950!5m2!1sam!2set" width="250" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p align="left">&copy; 2016 Your Surprise Lalibela Tour. All rights reserved.</p>
+  </footer>
+</html>
